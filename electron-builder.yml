@@ -1,0 +1,12 @@
+appId: com.sqn.ytd
+productName: SQN YTD
+copyright: Copyright © 2024 Srib Quinton
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
