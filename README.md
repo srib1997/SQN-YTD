@@ -2,7 +2,7 @@
 ### 無任何廣告，追求最乾淨不佔用效能的小工具
 
 ## 下載連結
-[https://github.com/srib1997/SQN-YTD/releases/tag/1.0.0](url)
+[https://github.com/srib1997/SQN-YTD/releases/tag/1.0.0](https://github.com/srib1997/SQN-YTD/releases/tag/1.0.0)
 
 # Mac 安裝(arm64)
 
