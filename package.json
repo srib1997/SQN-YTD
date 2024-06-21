@@ -8,11 +8,20 @@
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "build:all": "nextron build --mac --win --linux",
+    "build:win32": "nextron build --win --ia32",
+    "build:win64": "nextron build --win --x64",
+    "build:mac": "nextron build --mac --x64",
+    "build:linux": "nextron build --linux"
   },
   "dependencies": {
     "electron-serve": "^1.3.0",
-    "electron-store": "^8.2.0"
+    "electron-store": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "react-player": "^2.16.0",
+    "sweetalert2": "^11.12.0",
+    "ytdl-core": "^4.11.5"
   },
   "devDependencies": {
     "@chakra-ui/icons": "^2.1.1",

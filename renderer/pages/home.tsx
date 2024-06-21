@@ -1,39 +1,24 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import { Button, Link as ChakraLink } from '@chakra-ui/react'
 
 import { Container } from '../components/Container'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { Footer } from '../components/Footer'
-import { Hero } from '../components/Hero'
+import Youtube from '../components/Youtube'
 
 export default function HomePage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Home - Nextron (with-chakra-ui)</title>
+        <title>SQN-YTD</title>
       </Head>
       <Container minHeight="100vh">
+
+        <Youtube />
         <DarkModeSwitch />
-        <Image
-          src="/images/logo.png"
-          alt="Logo image"
-          width={200}
-          height={200}
-        />
-        <Hero title={`⚡Electron⚡ + Next.js + Chakra UI = 🔥`} />
         <Footer>
-          <Button
-            as={ChakraLink}
-            href="/next"
-            variant="solid"
-            colorScheme="teal"
-            rounded="button"
-            width="full"
-          >
-            Go to next page
-          </Button>
+          <p>Copyright © {new Date().getFullYear()} <ChakraLink href="https://github.com/srib1997" target={'_blank'}>Srib</ChakraLink> <ChakraLink href="https://github.com/quinton0121" target={'_blank'}>Quinton</ChakraLink></p>
         </Footer>
       </Container>
     </React.Fragment>
